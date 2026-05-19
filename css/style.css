@@ -363,6 +363,15 @@
       transform: translateY(0);
     }
 
+    .presencial-cta {
+      margin-top: 25px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
     /* Media Queries */
 
     @media (max-width: 980px) {
@@ -548,6 +557,12 @@
         width: 50%;
       }
 
+      .presencial-cta .btn {
+        font-size: 0.78rem;
+        padding: 11px 14px;
+        width: 90%;
+      }
+
       footer p {
         font-size: 0.72rem;
       }
@@ -561,5 +576,10 @@
 
       .plan-price {
         font-size: 2.1rem;
+      }
+
+      .presencial-cta .btn {
+        font-size: 0.75rem;
+        padding: 10px 12px;
       }
     }
