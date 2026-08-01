@@ -1,308 +1,420 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>William Estevam | Consultoria Online e Personal Presencial</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=2" />
-  <link rel="icon" href="img/icon.png" type="image/x-icon">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>William Estevam | Consultoria Online e Personal Presencial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css?v=3" />
+    <link rel="icon" href="img/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="scroll-progress">
+      <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">William <span>Estevam</span> Personal <span>Trainer</span></div>
-
-      <ul class="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#funciona">Como Funciona</a></li>
-        <li><a href="#planos">Planos</a></li>
-        <li><a href="#depoimentos">Resultados</a></li>
-      </ul>
-
-      <a href="#contato" class="btn">Começar Agora</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="hero-content fade-up">
-      <h1>Transforme seu corpo com uma <span>consultoria online personalizada</span></h1>
-
-      <p>
-        Treinos estruturados de forma individual, acompanhamento próximo e metodologia baseada em ciência para gerar resultados reais sem comprometer sua rotina.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#planos" class="btn">Ver Planos</a>
-        <a href="#sobre" class="btn btn-outline">Conhecer Método</a>
-      </div>
-      
-      <div class="hero-stats">
-        <div class="stat-card">
-          <h3>+200</h3>
-          <p>Alunos transformados</p>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          William <span>Estevam</span> Personal <span>Trainer</span>
         </div>
 
-        <div class="stat-card">
-          <h3>6+</h3>
-          <p>Anos de experiência</p>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#funciona">Como Funciona</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#depoimentos">Resultados</a></li>
+          <li class="nav-links-mobile-cta">
+            <a href="#contato" class="btn">Começar Agora</a>
+          </li>
+        </ul>
+
+        <a href="#contato" class="btn btn-desktop-only">Começar Agora</a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <section class="hero">
+      <div class="hero-content fade-up">
+        <p class="eyebrow">Consultoria Esportiva Online &amp; Presencial</p>
+        <h1>
+          Transforme seu corpo com uma <span>consultoria personalizada</span>
+        </h1>
+
+        <p>
+          Treinos estruturados de forma individual, acompanhamento próximo e
+          metodologia baseada em ciência para gerar resultados reais sem
+          comprometer sua rotina.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#planos" class="btn">Ver Planos</a>
+          <a href="#sobre" class="btn btn-outline">Conhecer Método</a>
         </div>
 
-        <div class="stat-card">
-          <h3>100%</h3>
-          <p>Treinos personalizados</p>
+        <div class="hero-stats">
+          <div class="stat-card spotlight-card">
+            <h3>
+              <span class="count-up" data-target="200" data-suffix="+">0</span>
+            </h3>
+            <p>Alunos transformados</p>
+          </div>
+
+          <div class="stat-card spotlight-card">
+            <h3>
+              <span class="count-up" data-target="6" data-suffix="+">0</span>
+            </h3>
+            <p>Anos de experiência</p>
+          </div>
+
+          <div class="stat-card spotlight-card">
+            <h3>
+              <span class="count-up" data-target="100" data-suffix="%">0</span>
+            </h3>
+            <p>Treinos personalizados</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="hero-image fade-up">
-      <img src="img/estevam.personal-img.png" alt="Personal Trainer">
-    </div>
-  </section>
-
-  <section class="about" id="sobre">
-    <div class="fade-up">
-      <img src="img/dumbells.jpg" alt="William Estevam">
-    </div>
-
-    <div class="fade-up">
-      <h2 class="section-title">Sobre Mim</h2>
-
-      <p>
-        Sou William Estevam, Personal Trainer especializado em consultoria esportiva online. Minha missão é unir ciência do exercício, individualização e acompanhamento próximo para entregar resultados reais e sustentáveis.
-      </p>
-
-      <div class="about-list">
-        <div>✔ Graduado em Educação Física Bacharelado - CREF ativo.</div>
-        <div>✔ Avaliação postural e biomecânica aplicada.</div>
-        <div>✔ Experiência com hipertrofia, emagrecimento e qualidade de vida.</div>
+      <div class="hero-image fade-up">
+        <img src="img/estevam.personal-img.png" alt="Personal Trainer" />
+        <div class="hero-image-badge"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="funciona">
-    <div class="fade-up">
-      <h2 class="section-title">Como Funciona</h2>
-      <p class="section-subtitle">
-        Todo o processo foi pensado para entregar um acompanhamento profissional, individualizado e eficiente.
-      </p>
-    </div>
-
-    <div class="steps-grid">
-      <div class="step-card fade-up">
-        <div class="step-number">01</div>
-        <h3>Anamnese Estratégica</h3>
-        <p>Entendo seu histórico, rotina, dores, objetivos e limitações antes de estruturar qualquer treino.</p>
+    <section class="about" id="sobre">
+      <div class="fade-up">
+        <img src="img/dumbells.jpg" alt="William Estevam" />
       </div>
 
-      <div class="step-card fade-up">
-        <div class="step-number">02</div>
-        <h3>Avaliação Postural</h3>
-        <p>Identificação de desequilíbrios musculares e padrões compensatórios para um treino mais seguro.</p>
+      <div class="fade-up">
+        <h2 class="section-title">Sobre Mim</h2>
+
+        <p>
+          Sou William Estevam, Personal Trainer especializado em consultoria
+          esportiva online. Minha missão é unir ciência do exercício,
+          individualização e acompanhamento próximo para entregar resultados
+          reais e sustentáveis.
+        </p>
+
+        <div class="about-list">
+          <div>✔ Graduado em Educação Física Bacharelado - CREF ativo.</div>
+          <div>✔ Avaliação postural e biomecânica aplicada.</div>
+          <div>
+            ✔ Experiência com hipertrofia, emagrecimento e qualidade de vida.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="funciona">
+      <div class="fade-up">
+        <h2 class="section-title">Como Funciona</h2>
+        <p class="section-subtitle">
+          Todo o processo foi pensado para entregar um acompanhamento
+          profissional, individualizado e eficiente.
+        </p>
       </div>
 
-      <div class="step-card fade-up">
-        <div class="step-number">03</div>
-        <h3>Protocolo Personalizado</h3>
-        <p>Seu treino é montado conforme sua realidade, equipamentos disponíveis e objetivo físico.</p>
+      <div class="steps-grid">
+        <div class="step-card spotlight-card fade-up">
+          <div class="step-number">01</div>
+          <h3>Anamnese Estratégica</h3>
+          <p>
+            Entendo seu histórico, rotina, dores, objetivos e limitações antes
+            de estruturar qualquer treino.
+          </p>
+        </div>
+
+        <div class="step-card spotlight-card fade-up">
+          <div class="step-number">02</div>
+          <h3>Avaliação Postural</h3>
+          <p>
+            Identificação de desequilíbrios musculares e padrões compensatórios
+            para um treino mais seguro.
+          </p>
+        </div>
+
+        <div class="step-card spotlight-card fade-up">
+          <div class="step-number">03</div>
+          <h3>Protocolo Personalizado</h3>
+          <p>
+            Seu treino é montado conforme sua realidade, equipamentos
+            disponíveis e objetivo físico.
+          </p>
+        </div>
+
+        <div class="step-card spotlight-card fade-up">
+          <div class="step-number">04</div>
+          <h3>Acompanhamento Contínuo</h3>
+          <p>
+            Suporte via WhatsApp, ajustes constantes e evolução monitorada
+            semanalmente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="fade-up">
+        <h2 class="section-title">Meus Diferenciais</h2>
+        <p class="section-subtitle">
+          O foco não é apenas passar treino. É criar um sistema de evolução
+          contínua e individualizada.
+        </p>
       </div>
 
-      <div class="step-card fade-up">
-        <div class="step-number">04</div>
-        <h3>Acompanhamento Contínuo</h3>
-        <p>Suporte via WhatsApp, ajustes constantes e evolução monitorada semanalmente.</p>
-      </div>
-    </div>
-  </section>
+      <div class="differentials-grid">
+        <div class="diff-card spotlight-card fade-up">
+          <h3>Treino Individualizado</h3>
+          <p>
+            Nada de protocolos genéricos. Cada estratégia é construída de acordo
+            com seu perfil biomecânico e objetivo.
+          </p>
+        </div>
 
-  <section>
-    <div class="fade-up">
-      <h2 class="section-title">Meus Diferenciais</h2>
-      <p class="section-subtitle">
-        O foco não é apenas passar treino. É criar um sistema de evolução contínua e individualizada.
-      </p>
-    </div>
+        <div class="diff-card spotlight-card fade-up">
+          <h3>Correção Postural</h3>
+          <p>
+            Treinos adaptados para reduzir compensações, dores e melhorar sua
+            eficiência de movimento.
+          </p>
+        </div>
 
-    <div class="differentials-grid">
-      <div class="diff-card fade-up">
-        <h3>Treino Individualizado</h3>
-        <p>Nada de protocolos genéricos. Cada estratégia é construída de acordo com seu perfil biomecânico e objetivo.</p>
-      </div>
+        <div class="diff-card spotlight-card fade-up">
+          <h3>Suporte Próximo</h3>
+          <p>
+            Contato direto para tirar dúvidas, ajustar execução e manter
+            consistência ao longo do processo.
+          </p>
+        </div>
 
-      <div class="diff-card fade-up">
-        <h3>Correção Postural</h3>
-        <p>Treinos adaptados para reduzir compensações, dores e melhorar sua eficiência de movimento.</p>
+        <div class="diff-card spotlight-card fade-up">
+          <h3>Evolução Estratégica</h3>
+          <p>
+            Atualizações planejadas para evitar estagnação e manter progressão
+            contínua.
+          </p>
+        </div>
       </div>
-
-      <div class="diff-card fade-up">
-        <h3>Suporte Próximo</h3>
-        <p>Contato direto para tirar dúvidas, ajustar execução e manter consistência ao longo do processo.</p>
-      </div>
-
-      <div class="diff-card fade-up">
-        <h3>Evolução Estratégica</h3>
-        <p>Atualizações planejadas para evitar estagnação e manter progressão contínua.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
     <section id="presencial">
-  <div class="fade-up">
-    <h2 class="section-title">Personal Presencial</h2>
-    <p class="section-subtitle">
-      Além da consultoria online, também ofereço acompanhamento presencial em Itu/SP para quem busca uma experiência ainda mais próxima e personalizada.
-    </p>
-  </div>
-
-  <div class="differentials-grid">
-    <div class="diff-card fade-up">
-      <h3>Acompanhamento em Tempo Real</h3>
-      <p>Estou ao seu lado durante toda a sessão, corrigindo a execução dos movimentos no momento em que acontecem.</p>
-    </div>
-
-    <div class="diff-card fade-up">
-      <h3>Correção Imediata</h3>
-      <p>Feedbacks instantâneos sobre postura, técnica e respiração para maximizar resultados e prevenir lesões.</p>
-    </div>
-
-    <div class="diff-card fade-up">
-      <h3>Treino 100% Individualizado</h3>
-      <p>Cada sessão é planejada e adaptada conforme sua evolução, disponibilidade e objetivos do momento.</p>
-    </div>
-
-    <div class="diff-card fade-up">
-      <h3>Maior Segurança e Eficiência</h3>
-      <p>Com supervisão direta, os exercícios são executados com mais segurança, aproveitando ao máximo cada treino.</p>
-    </div>
-  </div>
-    <div class="diff-card presencial-cta fade-up">
-      <h3>Interessado no Presencial?</h3>
-      <p>Entre em contato e saiba como podemos montar um plano presencial ideal para você.</p>
-      <a href="#contato" class="btn">Treinar Presencialmente</a>
-  </div>
-      <br>
-</section>
-
-  <section id="planos">
-    <div class="fade-up">
-      <h2 class="section-title">Planos</h2>
-      <p class="section-subtitle">
-        Escolha o plano ideal para sua fase atual e comece sua transformação.
-      </p>
-    </div>
-
-    <div class="plans-grid">
-      <div class="plan-card fade-up">
-        <h3>STARTER</h3>
-        <div class="plan-price">R$ 99,90/mês</div>
-        <p>Ideal para quem quer começar com acompanhamento profissional.</p>
-
-        <ul>
-          <li>✔ Treino personalizado</li>
-          <li>✔ Anamnese Inicial</li>
-          <li>✔ Suporte via WhatsApp</li>
-          <li>✔ App MFIT PERSONAL</li>
-        </ul>
-
-        <a href="#contato" class="btn">Escolher Plano</a>
-      </div>
-
-      <div class="plan-card popular fade-up">
-        <div class="popular-badge">MAIS ESCOLHIDO</div>
-        <h3>PRO</h3>
-        <div class="plan-price">R$ 179,90/mês</div>
-        <p>Maior acompanhamento e evolução contínua.</p>
-
-        <ul>
-          <li>✔ Tudo do Starter</li>
-          <li>✔ Reavaliações posturais periódicas</li>
-          <li>✔ Atualizações estratégicas</li>
-          <li>✔ Relatório de evolução</li>
-        </ul>
-
-        <a href="#contato" class="btn">Escolher Plano</a>
-      </div>
-
-      <div class="plan-card fade-up">
-        <h3>ELITE</h3>
-        <div class="plan-price">R$ 219,90/mês</div>
-        <p>Acompanhamento premium para máxima performance.</p>
-
-        <ul>
-          <li>✔ Tudo do plano Pro</li>
-          <li>✔ Check-ins semanais</li>
-          <li>✔ Análise de execução</li>
-          <li>✔ Prioridade no suporte</li>
-        </ul>
-
-        <a href="#contato" class="btn">Escolher Plano</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="depoimentos">
-    <div class="fade-up">
-      <h2 class="section-title">Resultados Reais</h2>
-      <p class="section-subtitle">
-        Alguns relatos de alunos que transformaram o físico e a qualidade de vida.
-      </p>
-    </div>
-
-    <div class="testimonials-grid">
-      <div class="testimonial-card fade-up">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <p>
-          “Percebi uma evolução bem grande no quesito carga vs força. Estou mais animado para os treinos, pois sempre são desafiadores. Estão bem insanos!
-          O suporte que você dá ajuda muito, sendo bem assertivo. O corpo está evoluindo bastante, principalmente os membros inferiores.”
+      <div class="fade-up">
+        <h2 class="section-title">Personal Presencial</h2>
+        <p class="section-subtitle">
+          Além da consultoria online, também ofereço acompanhamento presencial
+          em Itu/SP para quem busca uma experiência ainda mais próxima e
+          personalizada.
         </p>
-        <br>
-        <strong>Arthur B.</strong>
       </div>
 
-      <div class="testimonial-card fade-up">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
+      <div class="differentials-grid">
+        <div class="diff-card spotlight-card fade-up">
+          <h3>Acompanhamento em Tempo Real</h3>
+          <p>
+            Estou ao seu lado durante toda a sessão, corrigindo a execução dos
+            movimentos no momento em que acontecem.
+          </p>
+        </div>
+
+        <div class="diff-card spotlight-card fade-up">
+          <h3>Correção Imediata</h3>
+          <p>
+            Feedbacks instantâneos sobre postura, técnica e respiração para
+            maximizar resultados e prevenir lesões.
+          </p>
+        </div>
+
+        <div class="diff-card spotlight-card fade-up">
+          <h3>Treino 100% Individualizado</h3>
+          <p>
+            Cada sessão é planejada e adaptada conforme sua evolução,
+            disponibilidade e objetivos do momento.
+          </p>
+        </div>
+
+        <div class="diff-card spotlight-card fade-up">
+          <h3>Maior Segurança e Eficiência</h3>
+          <p>
+            Com supervisão direta, os exercícios são executados com mais
+            segurança, aproveitando ao máximo cada treino.
+          </p>
+        </div>
+      </div>
+      <div class="diff-card presencial-cta fade-up">
+        <h3>Interessado no Presencial?</h3>
         <p>
-          “Sua forma de consultoria me surpreendeu. Já tinha feito outras vezes e foi bem diferente. A forma de avaliação, a explicação bem clara, o acompanhamento frequente
-          e o aplicativo que facilitou muito com os vídeos mostrandos os exercícios e a forma que deve ser feito, o tempo de intervalo, bem completo.”
+          Entre em contato e saiba como podemos montar um plano presencial ideal
+          para você.
         </p>
-        <br>
-        <strong>Bianca C.</strong>
+        <a href="#contato" class="btn">Treinar Presencialmente</a>
       </div>
+      <br />
+    </section>
 
-      <div class="testimonial-card fade-up">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <p>
-          “O cuidado que tem na montagem dos treinos para atender as necessidades é surreal. Aprendi e aprendo muito com as suas explicações, o formato de avaliações me deixa muito
-          satisfeita. Percebi uma evolução muito boa, fora que tinha muitas dores na lombar por conta da postura. E no pouco tempo de consultoria minha postura melhorou muito.”
+    <section id="planos">
+      <div class="fade-up">
+        <h2 class="section-title">Planos</h2>
+        <p class="section-subtitle">
+          Escolha o plano ideal para sua fase atual e comece sua transformação.
         </p>
-        <br>
-        <strong>Amanda L.</strong>
       </div>
-    </div>
-  </section>
 
-  <section class="cta" id="contato">
-    <div class="fade-up">
-      <h2>Pronto para transformar seu físico?</h2>
-      <p style="max-width: 700px; margin: 0 auto 30px;">
-        Comece hoje com um acompanhamento profissional, individualizado e focado em resultados reais.
-      </p>
-      
-      <div class="cta-buttons">
-      <a href="https://wa.me/+5511950596697" class="btn">Entrar em Contato</a>
-      <a href="https://client.mfitpersonal.com.br/out/signup-link/OTc2MTk=" class="btn">Faça seu Cadastro</a>
+      <div class="plans-grid">
+        <div class="plan-card spotlight-card fade-up">
+          <h3>STARTER</h3>
+          <div class="plan-price">R$ 99,90/mês</div>
+          <p>Ideal para quem quer começar com acompanhamento profissional.</p>
+
+          <ul>
+            <li>✔ Treino personalizado</li>
+            <li>✔ Anamnese Inicial</li>
+            <li>✔ Suporte via WhatsApp</li>
+            <li>✔ App MFIT PERSONAL</li>
+          </ul>
+
+          <a href="#contato" class="btn">Escolher Plano</a>
+        </div>
+
+        <div class="plan-card popular spotlight-card fade-up">
+          <div class="popular-badge">MAIS ESCOLHIDO</div>
+          <h3>PRO</h3>
+          <div class="plan-price">R$ 179,90/mês</div>
+          <p>Maior acompanhamento e evolução contínua.</p>
+
+          <ul>
+            <li>✔ Tudo do Starter</li>
+            <li>✔ Reavaliações posturais periódicas</li>
+            <li>✔ Atualizações estratégicas</li>
+            <li>✔ Relatório de evolução</li>
+          </ul>
+
+          <a href="#contato" class="btn">Escolher Plano</a>
+        </div>
+
+        <div class="plan-card spotlight-card fade-up">
+          <h3>ELITE</h3>
+          <div class="plan-price">R$ 219,90/mês</div>
+          <p>Acompanhamento premium para máxima performance.</p>
+
+          <ul>
+            <li>✔ Tudo do plano Pro</li>
+            <li>✔ Check-ins semanais</li>
+            <li>✔ Análise de execução</li>
+            <li>✔ Prioridade no suporte</li>
+          </ul>
+
+          <a href="#contato" class="btn">Escolher Plano</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p>
-      William Estevam © 2026 - Consultoria Esportiva Online
-    </p>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
+    <section id="depoimentos">
+      <div class="fade-up">
+        <h2 class="section-title">Resultados Reais</h2>
+        <p class="section-subtitle">
+          Alguns relatos de alunos que transformaram o físico e a qualidade de
+          vida.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card spotlight-card fade-up">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>
+            “Percebi uma evolução bem grande no quesito carga vs força. Estou
+            mais animado para os treinos, pois sempre são desafiadores. Estão
+            bem insanos! O suporte que você dá ajuda muito, sendo bem assertivo.
+            O corpo está evoluindo bastante, principalmente os membros
+            inferiores.”
+          </p>
+          <br />
+          <strong>Arthur B.</strong>
+        </div>
+
+        <div class="testimonial-card spotlight-card fade-up">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>
+            “Sua forma de consultoria me surpreendeu. Já tinha feito outras
+            vezes e foi bem diferente. A forma de avaliação, a explicação bem
+            clara, o acompanhamento frequente e o aplicativo que facilitou muito
+            com os vídeos mostrandos os exercícios e a forma que deve ser feito,
+            o tempo de intervalo, bem completo.”
+          </p>
+          <br />
+          <strong>Bianca C.</strong>
+        </div>
+
+        <div class="testimonial-card spotlight-card fade-up">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>
+            “O cuidado que tem na montagem dos treinos para atender as
+            necessidades é surreal. Aprendi e aprendo muito com as suas
+            explicações, o formato de avaliações me deixa muito satisfeita.
+            Percebi uma evolução muito boa, fora que tinha muitas dores na
+            lombar por conta da postura. E no pouco tempo de consultoria minha
+            postura melhorou muito.”
+          </p>
+          <br />
+          <strong>Amanda L.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contato">
+      <div class="fade-up">
+        <h2>Pronto para transformar seu físico?</h2>
+        <p style="max-width: 700px; margin: 0 auto 30px">
+          Comece hoje com um acompanhamento profissional, individualizado e
+          focado em resultados reais.
+        </p>
+
+        <div class="cta-buttons">
+          <a href="https://wa.me/+5511950596697" class="btn"
+            >Entrar em Contato</a
+          >
+          <a
+            href="https://client.mfitpersonal.com.br/out/signup-link/OTc2MTk="
+            class="btn"
+            >Faça seu Cadastro</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <a
+      href="https://wa.me/+5511950596697"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener"
+      aria-label="Falar no WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+        <path
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.51 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.55 3.7-8.25 8.26-8.25 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.42 5.84c0 4.55-3.71 8.23-8.26 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.15.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.02s.87 2.35 1 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28Z"
+        />
+      </svg>
+    </a>
+
+    <footer>
+      <p>William Estevam © 2026 - Consultoria Esportiva Online</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
